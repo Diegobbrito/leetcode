@@ -48,12 +48,7 @@ public class IntersectionTwoArrays {
             }
         }
 
-        int []result = new int[list.size()];
-        int i = 0;
-        for(int value : list){
-            result[i++] = value;
-        }
-        return result;
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 
 }
